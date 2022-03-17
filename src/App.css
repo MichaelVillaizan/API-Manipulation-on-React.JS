@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; 
+  
+
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  
+  background-image: url("http://cdn26.us1.fansshare.com/photo/wallpaperbackground/cool-backgrounds-blue-blue-263966608.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.listOfMovies{
+  margin-top: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+.listOfMovies div{
+  width: 85%;
+  margin-bottom: 20px;
+  height: 60px;
+  background-color: white;
+  min-height: 150px;
+  
+  border-radius: 20px;
+  border: 1px solid black ;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  overflow: hidden;
+  background-image: url("https://picsum.photos/200/300");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.searcher{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  width: 85%;
+  height: 34px;
+  border-radius: 18px;
+  background: none;
+  border: none;
+}
+
+.searcher:focus{
+  outline:none;
+  
+}
+.searcher-label{
+  
+  padding: 10px;
+  display: flex;
+  margin: 20px auto;
+  flex-direction: row;
+  width: 85%;
+  height: 54px;
+  background-color: white;
+  border-radius: 30px;
+  opacity: 70%;
+  transition: 1s;
+
+  
+}
+.searcher-label:hover{
+  
+  opacity: 100%;
+  
+}
+.searcher-label span{
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
+  transform: translateY(2px);
+}
+.listOfMovies div p{
+  height: fit-content;
+  
+  width: 100%;
+  background-color: black;
+  font-weight: bold;
+  color:white;
+  text-justify: center;
+  margin-bottom: 4px;
+  opacity: 70%;
+}
